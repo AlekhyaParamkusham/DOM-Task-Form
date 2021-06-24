@@ -1,0 +1,151 @@
+/* Main container */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 50vw;
+  height: 100vh;
+  border: 0;
+  background-image: url("images/form back.jpg");
+}
+
+/* Form */
+.formEle {
+  background-color: #F8EDE3;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding: 2%;
+  width: 18vw;
+  height: 90vh;
+  padding-left: 4%;
+}
+
+/* Divs for each input items */
+.innerDiv {
+  margin-bottom: 2%;
+  text-align: justify;
+}
+
+input, textarea {
+  border: 1.5px solid #F7A440;
+  border-radius: 10px;
+  margin-top: 1%;
+  padding: 1%;
+  font-size: 11px;
+}
+
+input::placeholder {
+  font-size: 11px;
+}
+
+input:focus {
+  outline: none;
+}
+
+label {
+  font-size: 15px;
+  font-weight: bolder;
+  color: #511281;
+  letter-spacing: 1.5px;
+  font-family: 'Patrick Hand SC';
+  margin-bottom: 1%;
+}
+
+/* Labels for checkbox and radio button */
+.innerLabel {
+  color: #BF1363;
+  font-family: 'VT323', monospace;
+  font-size: 13px;
+}
+
+/* Select button div */
+.btn {
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding: 3% 25%;
+}
+
+/* Select button class */
+.subBtn {
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding: 3% 15%;
+  border-radius: 10px;
+  border: 0;
+  background-color: #FFCC29;
+}
+
+.subBtn:focus {
+  outline: none;
+}
+
+.subBtn:hover {
+  background-color: #81B214;
+}
+
+/* select button for food items */
+.selBtn {
+  margin-top: 2%;
+  font-size: 11px;
+  border: 1px solid #F7A440;
+}
+
+.selBtn:hover {
+  background-color: #C490E4;
+  border: 1px solid #FF616D;
+}
+
+table, td, th {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 1%;
+}
+
+th {
+  text-align: center;
+  background-color: #E5B299;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+td {
+  width: 150px;
+  background-color: #A7C4BC;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 15px;
+  letter-spacing: 1.5px;
+  text-align: center
+}
+
+table {
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10%;
+}
+
+@media screen and (max-width: 1080px) {
+  .formEle {
+    width: 42vw;
+    height: 92vh;
+  }
+
+  .selBtn {
+    font-size: 9px;
+  }
+
+  .innerLabel {
+    font-size: 11px;
+  }
+
+  label {
+    font-size: 12px;
+  }
+
+  .innerDiv {
+    margin-bottom: 1%;
+  }
+}
